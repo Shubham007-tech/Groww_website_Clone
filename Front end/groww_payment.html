@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww - Payment</title>
+    <link rel="icon" href="https://groww.in/logo-groww270.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <link rel="stylesheet" href="/styles/payment_methods.css">
+
+    <style>
+        /* * {
+            padding: 3px;
+            margin: 2px;
+            border: 1px solid red;
+        } */
+        
+        button,
+        input {
+            display: block;
+            background-color: transparent;
+            border: 1px solid red;
+            padding: 3px;
+            margin: 5px;
+        }
+        button {
+            cursor: pointer;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .payment-detail {
+            display: none;
+        }
+        
+        .open {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div id="header">
+        <img src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/diwali-groww-white.a851baed.gif">
+        <div id="searchBox">
+            <i class="material-icons">search</i>
+            <input type="text" placeholder="What are you looking for today?">
+        </div>
+        <div id="loginBtn">
+            <div>Login/Register</div>
+        </div>
+    </div> -->
+
+    <nav class="max-w">
+        <div class="nav-div">
+            <div><a href="groww_home.html"><img class=""
+                        src="https://bit.ly/3nMw3oc"
+                        width="148" height="40" alt="Groww Logo" itemprop="logo"></a>
+            </div>
+
+            <div class="c-search">
+                <i class="material-icons">search</i><input type="search" id="search"
+                    placeholder="What are you looking for today?" />
+            </div>
+
+            <div id="thirdBox">
+                <a href="groww_signup.html"><button id="login-btn">Login/Register</button></a></li>
+                <div id="userAcc" class="dontDisplay">
+                    <img src="https://www.shareicon.net/data/2016/05/26/771188_man_512x512.png">
+                    <a href="groww_cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div id="container">
+    <div id="left_view_cart"></div>
+
+    <div id="right_view_cart">
+        <div class="cards-container">
+            <div >
+                <p>Amount payable : <span id="total_amount">0</span></p>
+            </div>
+
+            <div id="upi" data-type="upi">
+                <div class="flex align_center">
+                    <div>
+                        <img src='/icons/bhim.svg' alt="" width="40">
+
+                    </div>
+                    <div>
+                        <p >UPI Payment</p>
+                        <form action="" id="upiData" class="payment-detail">
+                            <input type="text" name="" id="vpa" class="underline inputBox" placeholder="Enter UPI ID"></input>
+                            <button type="submit" class="turkishButtons">Pay via upi id</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="netBanking" data-type="netBanking">
+                <div class="flex align_center">
+                    <div>
+                        <img src="/icons/net-banking.svg" alt="" width="40">
+                    </div>
+                    <div>
+                        <p>Pay via net banking</p>
+                        <form action="" id="netBankingData" class="payment-detail">
+                            <input type="text" name="" id="username" class="underline inputBox" placeholder="Enter Net Banking">
+                            <button type="submit" class="turkishButtons">Pay via net banking id</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="creditCard" data-type="creditCard">
+                <div class="flex align_center" id="last_div">
+                    <div>
+                        <img src="/icons/credit-card.svg" alt="" width="40">
+
+                    </div>
+                    <div>
+                        <p>PAY VIA CREDIT CARD</p>
+                        <form action="" id="creditCardData" class="payment-detail">
+                            <input type="text" name="" id="creditCardNumber" class="underline inputBox" placeholder="Enter Credit Card Number">
+                            <button type="submit" class="turkishButtons">Pay with creditCard</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="/scripts/payment.js"></script>
+<script src="/scripts/payment_metods.js"></script>
+
+<!--     <script>
+        let arr = document.querySelectorAll("form");
+        arr.forEach(x => x.addEventListener('submit', paymentMethod));
+        let i = 0;
+
+        let selectedType = 'upi'
+
+        let upi = document.getElementById('upi');
+        let creditCard = document.getElementById('creditCard');
+        let netBanking = document.getElementById('netBanking');
+
+        const options = [upi,  netBanking, creditCard]
+
+        options.forEach((item, i, array) => {
+            const currentItem = i;
+
+            item.addEventListener('click', (e) => {
+
+                const currentType = e.path.filter(ele => {
+                const type = ele.dataset?.type;
+
+                    if(Boolean(type)) {
+                        selectedType = type
+                    }
+                })
+
+                if(selectedType === array[currentItem].id) {
+                    arr[currentItem].classList.add('open');
+
+
+                    options.filter((item, i) => i!== currentItem).forEach(element => {
+                        const elemntForm = element.querySelector('form')
+                        elemntForm.classList.remove('open')
+                        
+                    })
+                }
+            })
+        })
+
+        arr[0].classList.add('open')
+
+
+
+        function paymentMethod(e) {
+            e.preventDefault();
+            console.log('success!!!' + e.target)
+        }
+    </script> -->
+    <script src="/scripts/changeNavbar.js"></script>
+</body>
+
+</html>

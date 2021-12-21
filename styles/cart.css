@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+  font-family: Roboto,system-ui;
+
+
+}
+#container {
+display: flex; 
+justify-content: space-between;
+max-width: 1110px;
+width: 100%;
+margin: 0 auto;
+margin-top: 30px;
+font-family: Roboto,system-ui;
+color: rgb(92, 88, 88);
+font-weight: regular;
+}
+#left_view_cart{
+width: 600px;
+display: flex;
+
+flex-direction: column;
+}
+#cart_view{
+opacity: 1;
+box-sizing: border-box;
+padding: 15px;
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+margin-top: 20px;
+margin-bottom: 0;
+}
+#cart_item{
+margin-bottom: 0;
+}
+#top_view{
+display: flex;
+justify-content: space-between;
+}
+#top_view img {
+width: 40px;
+}
+#left_top_view{
+display: flex;
+}
+#left_top_view img{
+padding-right: 30px
+}
+#icon {
+color: rgb(211, 209, 209);
+margin-top: auto;
+margin-bottom: auto;
+cursor: pointer;
+padding: 1px;
+
+}
+#icon:hover{
+  background-color: whitesmoke;
+}
+
+
+#bottom_view{
+display: flex;
+margin-left: 70px;
+}
+#bottom_view > p {
+margin-top: auto;
+margin-bottom:auto ;
+padding-right: 10px;
+font-family: 'Open Sans', sans-serif;
+color: rgb(173, 172, 172);
+font-weight: 600;
+
+}
+#bottom_view  span {
+font-weight: 700;
+font-size:large;
+}
+#heading {
+text-align: center;
+padding: 50px;
+}
+#container > img {
+width: 600px;
+height: 350px ;
+margin: auto;
+
+}
+#explore_fund{
+  font-size: medium;
+ width: 200px;
+ height: 43px;
+ margin: auto;
+ padding: 10px;
+ margin-top: 50px;
+ cursor: pointer;
+ background-color: #00d09c;
+ border: none;
+ border-radius: 4px;
+ font-weight: 550;
+ color: white;
+}
+
+#explore_fund span{
+
+margin-top: 0;
+
+}
+#right_view_cart{
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 19px;
+  font-weight: 400;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 370px;
+  height: 370px;
+}
+#right_view_cart img{
+  margin-top: 10px;
+}
+#right_view_cart p {
+  font-size: small;
+  color: #44475B;
+}
+#right_view_cart .safe{
+  margin-bottom: 30px;
+  color: #44475B;
+}
+
+
+#pay{
+  height: 43px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 24px;
+  cursor: pointer;
+  background-color: #00d09c;
+  border: none;
+  border-radius: 4px;
+  font-weight: 550;
+  color: white;
+  font-size: medium;
+}
+
+#total_amount_heading{
+  color: rgb(189, 187, 187);
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+

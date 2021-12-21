@@ -1,0 +1,481 @@
+
+#container{
+    width: 80%;
+    margin: 5% 10% 15% 10%;
+    display: flex;
+}
+#leftContainer{
+    width: 70%;
+}
+#rightContainer{
+    width: 27.5%;
+    height: 400px;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #f7f4f4;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+}
+#titleDetails{
+    width: 100%;
+    height: 150px;
+}
+#graphDetails{
+    width: 100%;
+    height: 600px;
+}
+#graphDetails > div{
+    width: 100%;
+    height: 10%;
+}
+.graphDesc, .graphDescTwo{
+    margin: 2% 0 0.5% 6%;
+    width: 50%;
+    display: flex;
+}
+#percentageOne{
+    font-size: 26px;
+    font-weight: 550;
+    color: #44475b;
+}
+.percentageDur{
+    margin: 2% 0 0% 2%;
+    font-size: 14px;
+    color: gray;
+}
+#percentageTwo{
+    margin-top: 2%;
+    font-size: 14px;
+    font-weight: 550;
+    color: #00d09c;
+}
+.graphDescTwo{
+    margin-top: 0;
+}
+#myChart{
+    margin: 2% 0 0 5%;
+    max-width: 90%;
+    height: 400px;
+}
+.proDetails, .minAmountDetails{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.detListLeft, .detListRight{
+    width: 50%;
+    border-right: 1px solid rgb(219, 214, 214);  
+}
+.detListRight{
+    border: none;
+}
+.points{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.subHead, #navValue, #sipValue, #ratingValue, #fundValue{
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+    font-family: Roboto,system-ui;
+}
+#navValue, #sipValue, #ratingValue, #fundValue{
+    color: #44475b;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Roboto,system-ui;
+}
+#returnCalDetails{
+    margin-top: 5%;
+    width: 100%;
+}
+.returnCalculatorTable{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+}
+.returnCalTitle{
+    padding: 30px 0 30px 30px;
+}
+.returnCalTitle div{
+    width: 85px;
+    padding: 6px;
+    color: #00d09c;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    background-color: #d4fff4;
+}
+#returnCalInterval, #graphInterval{
+    width: 90%;
+    margin-left: 4%;
+    padding: 30px 0 30px 0px;
+    border-bottom: 1px solid rgb(219, 214, 214);
+    display: flex;
+}
+#graphInterval{
+    max-width: 60%;
+    max-height: 30px;
+    padding: 0;
+    margin-left: 20%;
+    justify-content: center;
+    border: none;
+}
+.onclicked, .onNotclicked{
+    width: 60px;
+    padding: 6px;
+    color: #00d09c;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    background-color: #d4fff4;
+    cursor: pointer;
+    text-align: center;
+}
+.onNotclicked{ 
+    color: gray;
+    border: none;
+    background-color: white;
+}
+
+#rangeValue{
+    margin: 30px 0 30px 30px;
+    font-size: 17px;
+    font-weight: 550;
+}
+#pr{
+    width: 90%;
+    margin: 5px 0 30px 30px;
+}
+#returnCalDetOne, #returnCalDetTwo{
+    margin: 30px 0 10px 30px;
+    font-size: 17px;
+}
+#returnCalDetTwo{
+    margin: 10px 0 40px 30px;
+    font-size: 17px;
+    font-weight: 550;
+}
+.returnRankings{
+    width: 100%;
+    margin-top: 40px;
+}
+h3{
+    color: rgb(68, 66, 66);
+    margin-left: 5%;
+}
+.returnRankingsTable{
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+}
+.rowStyle, .rowStyleLast{
+    height: 55px;
+    display: flex;
+    border-bottom: 1px solid rgb(219, 214, 214);
+}
+.rowDetOne, .rowDet{
+    width: 40%;
+    padding: 20px 0 0 15px;
+    font-size: 14px;
+    font-family: Roboto,system-ui;
+    color: grey;
+}
+.rowDet{
+    width: 15%;
+    text-align: center;
+    color: rgb(66, 64, 64);
+}
+.rowStyleLast{
+    border-bottom: none;
+}
+#prosConsCont{
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+#proBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.pros{
+    width: 50%;
+}
+.proDet, .proDetTwo{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.proDet i{
+    margin-left: 5%;
+    color: #00d09c;
+}
+.proDet div{
+    margin: 1% 0 0 3%;
+    color: rgb(49, 47, 47);
+    font-weight: 540;
+    font-family: Roboto,system-ui;
+}
+.proDetTwo{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(219, 214, 214);;
+}
+.proPoints{
+    margin: 1% 0 0 5%;
+    color: grey;
+    font-size: 14px;
+    font-family: Roboto,system-ui;
+}
+#thumbsDown{
+    color: rgb(209, 77, 77);
+}
+.minAmountDetails{
+    display: block;
+}
+.minAmountDetails .detListLeft .points{
+    width: 95%;
+    margin-left: 4%;
+}
+#titleDetails > div{
+    margin-left: 6%;
+    height: 32%;
+}
+.proImg{
+    height: 80%;
+    padding: 5px;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #f7f4f4;
+}
+.proName{
+    margin-top: 3%;
+    font-size: 24px;
+    font-family: Roboto,system-ui;
+    color: rgb(92, 88, 88);
+}
+.divThree{
+    display: flex;
+}
+.divThree div{
+    margin-top: -1%;
+    height: 15px;
+    padding: 8px;
+    font-size: 12px;
+    color: grey;
+    font-weight: 550;
+    font-family: Roboto,system-ui;
+    border: 1px solid rgb(238, 232, 232);
+    border-radius: 15px;
+}
+.divThree > div:nth-child(2){
+    margin-left: 10px;
+}
+.optBtns{
+    height: 10%;
+    display: flex;
+    border-bottom: 1px solid rgb(219, 214, 214);
+}
+#paymentOpt{
+    height: 70%;
+    /* border: 1px solid red; */
+}
+.addToCart{
+    height: 15%;
+    display: flex;
+}
+#addToCartBtn, #goToCartBtn{
+    margin: 2% 0 0 8.5%;
+    width: 100px;
+    height: 30px;
+    padding: 13px 10px 0px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+    font-family: Roboto,system-ui;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00d09c;
+}
+#goToCartBtn{
+    width: 90px;
+}
+.whenClicked{
+    margin: 3% 0 -0.4% 5%;
+    padding: 0 5px 0 5px;
+    font-size: 14px;
+    font-weight: 530;
+    font-family: Roboto,system-ui;
+    color: #00d09c;
+    border-bottom: 4px solid #00d09c;
+    cursor: pointer;
+}
+.whenNotClicked{
+    margin: 3% 0 -0.4% 5%;
+    padding: 0 5px 0 5px;
+    font-size: 14px;
+    font-weight: 530;
+    font-family: Roboto,system-ui;
+    color: #44475b;
+    cursor: pointer;
+}
+.doNotDisplay{
+    display: none;
+}
+.letDisplay{
+    display: block;
+}
+#sipAmount, #sipCal{
+    display: flex;
+    height: 50px;
+}
+#paymentOpt > div:nth-child(1){
+    margin-top: 4%;
+}
+#sipAmount div{
+    width: 50%;
+    padding: 16px 0 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto,system-ui;
+    color: rgb(92, 88, 88);
+}
+#sipAmount input{
+    height: 55%;
+    width: 110px;
+    padding-right: 10px;
+    margin-top: 4%;
+    text-align: right;
+    border: none;
+    background-color: #d4fff4;
+    border: none;
+    font-size: 13.5px;
+    color: #00d09c;
+}
+#sipAmountInput::placeholder  {
+    color: #00d09c;
+}
+#sipAmountInput:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#sipCal div{
+    width: 50%;
+    padding: 16px 0 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto,system-ui;
+    color: rgb(92, 88, 88);
+}
+#sipCal input{
+    height: 55%;
+    width: 120px;
+    margin-top: 4%;
+    border: none;
+    background-color: #d4fff4;
+    font-size: 13.5px;
+    color: #00d09c;
+}
+.rupeeSymbol, #calendarIcon{
+    position: absolute;
+    margin: 22% 0 0 58%;
+    color: #00d09c;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 0;
+}
+#calendarIcon{
+    margin: 36.5% 0 0 84%;
+}
+#calendarIcon i{
+    font-size: 20px;
+}
+#paymentNote{
+    font-size: 12px;
+    margin: 47% 0 0 23%;
+    color: gray;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #d4fff4;
+      cursor: pointer;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #00d09c;
+      margin-top: -1px;
+    }
+
+      input[type='range']::-webkit-slider-thumb {
+      width: 20px;
+      -webkit-appearance: none;
+      height: 20px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #00d09c;
+    }
+
+}
+
+@media(max-width:376px){
+    #container{
+        width: 100%;
+        display: block;
+        margin-left: -1%;
+    }
+    #leftContainer{
+        width: 100%;
+    }
+    #rightContainer{
+        width: 100%;
+        position: absolute;
+        margin-top: 140%;
+    }
+    .proDetails{
+        margin-top: 40%;
+    }
+    .returnRankingsTable{
+        width: 100%;
+    }
+    .rowDetOne, .rowDet{
+        overflow: hidden;
+    }
+    .minAmountDetails > h3{
+        margin-top: 80px;
+    }
+    .minAmountDetails > div{
+        margin-top: 0;
+    }
+    #paymentNote{
+        margin: 44% 0 0 23%;
+    }
+    .rupeeSymbol{
+        margin: 20% 0 0 58%;
+    }
+    #calendarIcon{
+        margin: 33% 0 0 81%;
+    }
+}

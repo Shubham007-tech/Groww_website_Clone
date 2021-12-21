@@ -1,0 +1,30 @@
+.noDropDownDisplay{
+    display: none;
+}
+
+.dropDown{
+    width: 438px;
+    margin-left: 39.1%;
+    position: absolute;
+    border: 0px solid rgb(219, 214, 214);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.dropDownDiv{   
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    border-bottom: 1px solid rgb(231, 228, 228);
+}
+.dropDownDiv:hover{
+   background-color: whitesmoke;
+}
+.dropDownName{
+    width: 80%;
+    margin: 0% 10% 0 10%;
+    padding-top: 15px;
+}

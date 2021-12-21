@@ -1,0 +1,649 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Groww - Products</title>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel = "icon" href = "https://groww.in/logo-groww270.png" type = "image/x-icon"> 
+       <link rel = "stylesheet" href="/styles/navbar.css">
+       <link rel="stylesheet" href="/styles/search_box.css">
+       
+       <style>
+           #container{
+                width: 80%;
+                margin: 5% 10% 15% 10%;
+                display: flex;
+            }
+           .filter_section, .filter_section_one{
+              display:inline-block;
+               width:270px;
+               border: 1px solid #ecedef;
+               border-radius: 3px;
+               box-shadow: 0 2px 3px 0 #0000001a;
+               padding-bottom: 10px;
+               
+           }
+           .filter_section_one{
+               padding: 5px 0 15px 0;
+               display: flex;
+           }
+           #clearFilterBtn{
+               margin: 5% 0 0 45%;
+               font-size: 14px;
+               font-weight: 600;
+               cursor: pointer;
+               color: #00d09c;
+           }
+
+           .right{
+               width:800px;
+               margin-top: 60px;
+             
+               
+           }
+
+           .container{
+               display:flex;
+                margin-top: 0px;
+               width : 96%;
+               
+           }
+           .icon{
+               width:35px;
+               height:35px;
+               padding:12px;
+               
+
+           }
+           .MFtext, .filterHeading{
+              font-size: 1rem;
+              letter-spacing: 0.01em;
+              color:#44475b;
+              font-weight: 700;
+              display:inline-block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+             
+           }
+
+           .filterHeading{
+                margin-top: 15px;
+                padding-left: 10px;
+                
+           }
+
+           .sub{
+               display:grid;
+               grid-template-columns: 200px 200px;
+               grid-gap:320px;
+               
+           }
+
+           .MFsub_text{
+               
+               width:200px;
+               margin-top: 3px;
+               font-size: .78rem;
+               line-height: 160%;
+               color: #7c7e8c;
+               letter-spacing: .2px;
+               margin-left: 60px;
+           }
+
+           .MFsub_text2{
+               
+               width:200px;
+               margin-top: 3px;
+               font-size: .78rem;
+               line-height: 160%;
+               color: #7c7e8c;
+               letter-spacing: .2px;
+               margin-left: 20%;
+              
+           }
+
+           .MFdiv{
+               border: 1px solid rgb(219, 214, 214);
+               height:100px;
+               transition: 0.2s;
+               box-shadow: 0 2px 3px 0 #0000001a;
+               cursor: pointer;
+           }
+           .MFdiv:hover{
+               transform: scale(1.01);
+
+           }
+
+           .returns{
+              
+               
+               float:right;
+               margin-top: 30px;
+               margin-right: 35px;
+
+               font-size: 1rem;
+              letter-spacing: 0.01em;
+              color:#44475b;
+              font-weight: 700;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+           }
+
+           .left{
+               display:grid;
+               grid-template-columns: 220px;
+               margin-left: 50px;
+               height:700px;
+               width:300px;
+
+           }
+           .scroll{
+            overflow: auto;
+           }
+         
+           .head{
+               color:#44475b;
+               letter-spacing: .01em;
+               line-height: 160%;
+               font-size: 1.1rem;
+               font-weight: 600;
+               display:inline-block;
+           }
+           
+           .Sort{
+               
+            margin-left: 435px;
+            margin-top: 1.5%;
+            width: 220px;
+            font-size: 13px;
+            padding: 5px 10px;
+            height: 80%;
+            color:#7c7e8c;
+            border: 1px solid rgb(219, 214, 214);
+            font-family: Arial, Helvetica, sans-serif;
+           }
+           
+           .Sort:focus{
+               outline: none;
+ }
+          
+
+           .box{
+               font-size: 14px;
+               color: #44475b;
+               letter-spacing: .3px;
+               padding: 5px;
+           }
+
+           .cat{
+               height:150px;
+           }
+           .productTileOne{
+               position: absolute;
+               display: flex;
+               padding:0;
+               margin-left:34%;
+               margin-top:3%;
+               width: 60%;
+               
+           }
+
+
+
+           
+           @media(max-width: 600px) { 
+
+           
+ 
+            .left{
+               display:none;
+              
+           }
+
+           .right{
+               margin-left:-19px;
+               width:99%;
+               margin-top: 35px;
+               
+               
+           }
+
+           .icon{
+               width:28px;
+               height:28px;
+               padding:0px;
+               padding-right:4px;
+               
+
+           }
+
+           .MFdiv{
+               border: 1px solid rgb(219, 214, 214);
+               height:80px;
+               width:85%;
+               transition: 0.2s;
+               box-shadow: 0 2px 3px 0 #0000001a;
+               cursor: pointer;
+               
+           }
+
+           .returns{
+              
+            display:none;
+          }
+
+           .MFsub_text{
+               
+               width:65%;
+               margin-top: 3px;
+               font-size: .62rem;
+               line-height: 160%;
+               color: #7c7e8c;
+               letter-spacing: .2px;
+               margin-left: 20%;
+               word-break: break-word;
+           }
+
+           .MFsub_text2{
+               display:none;
+              
+               width:200px;
+               margin-top: 3px;
+               font-size: .78rem;
+               line-height: 160%;
+               color: #7c7e8c;
+               letter-spacing: .2px;
+               margin-left: 20%;
+              
+           }
+
+
+           .MFtext{
+            
+             margin-left: 2px;
+              width:70%;
+              font-size: 0.9rem;
+              letter-spacing: 0.01em;
+              color:#44475b;
+              font-weight: 600;
+              display:inline-block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+             
+           }
+
+
+
+
+           .productTileOne{
+               
+               position: absolute;
+               margin-left:2px;
+               padding:0;
+               font-size: small;
+               margin-top:3%;
+               width: 75%;
+               
+               height:30px;
+               
+           }
+
+           .head{
+               color:#44475b;
+               letter-spacing: .01em;
+               width:90%;
+               font-size: 1rem;
+               font-weight: 700;
+               display:inline-block;
+           }
+
+
+          .Sort{
+               
+              display:none;
+              }
+              
+
+            }
+
+
+       </style>
+       
+   </head>
+   <body>
+       
+       <!-- <div id="header">
+           <img src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/diwali-groww-white.a851baed.gif">
+           <div id="searchBox">
+               <i class="material-icons">search</i>
+               <input type="text" placeholder="What are you looking for today?">
+           </div>
+           <div id="loginBtn">
+               <div>Login/Register</div>
+           </div>
+       </div> -->
+
+    <nav class="max-w">
+        <div class="nav-div">
+            <div><a href="groww_home.html"><img class=""
+                        src="https://bit.ly/3nMw3oc"
+                        width="148" height="40" alt="Groww Logo" itemprop="logo"></a>
+            </div>
+
+            <div class="c-search">
+                <i class="material-icons">search</i><input type="search" id="search"
+                    placeholder="What are you looking for today?" />
+            </div>
+
+            <div id="thirdBox">
+                <a href="groww_signup.html"><button id="login-btn">Login/Register</button></a></li>
+                <div id="userAcc" class="dontDisplay">
+                    <img id="user" src="https://www.shareicon.net/data/2016/05/26/771188_man_512x512.png">
+                    <a href="groww_cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="logOutDropDown" class="noDropDownDisplay">
+        <div class="logout">Log Out</div>
+    </div>
+    <div id="dropDown" class="noDropDownDisplay"></div>
+
+    
+        <div class="productTileOne">
+        <h1 class="head">All Future & Options</h2>
+
+            <select id="Sort" class="Sort" onchange="Sorting()">
+                <option > Sort by:</option>
+               <option value="Rat"> Rating- High To Low</option>
+               <option value="Ret"> Returns- High To Low</option>
+            </select>
+
+        </div>
+
+
+    <div id="container" class="container">
+        
+        <!-- Add your contents here -->
+        <div class="left">
+
+            <div class="filter_section_one">
+                <div class="filterHeading">FILTERS</div>
+                <div id="clearFilterBtn" onclick="clear_Tick()">Clear All</div>
+            </div>
+
+        <div class="filter_section scroll">
+        <div class="filterHeading">AMC</div>
+        <div class="box">
+            <input type="checkbox" value="Axis" class="checkbox amctick" id="axis">
+            <label for="axisMF">Axis Mutual Fund</label> 
+        </div>
+        <div class="box">
+          <input type="checkbox" value="ICICI" class="checkbox amctick" id="icici">
+          <label for="iciciMF">ICICI Prudential Technology</label> 
+      </div>
+      <div class="box">
+          <input type="checkbox" value="HDFC" class="checkbox amctick" id="hdfc">
+          <label for="hdfcMF">HDFC</label> 
+      </div>
+      <div class="box">
+        <input type="checkbox" value="TATA" class="checkbox amctick" id="tata">
+        <label for="tata">TATA Digital India</label> 
+    </div>
+    <div class="box">
+        <input type="checkbox" value="Paragh Parikh" class="checkbox amctick" id="">
+        <label for="">Paragh Parikh</label> 
+    </div>
+   
+    <div class="box">
+        <input type="checkbox" value="UTI" class="checkbox amctick" id="">
+        <label for="">UTI Flexi Cap</label> 
+    </div> 
+    <div class="box">
+        <input type="checkbox" value="Kotak" class="checkbox amctick" id="">
+        <label for="">Kotak Bluechip Funds</label> 
+    </div>
+    <div class="box">
+        <input type="checkbox" value="Aditya Birla" class="checkbox amctick" id="">
+        <label for="">Aditya Birla Sun Life</label> 
+    </div>
+    <div class="box">
+        <input type="checkbox" value="Nippon India Pharma" class="checkbox amctick" id="">
+        <label for="">Nippon India Pharma</label> 
+    </div>
+    <div class="box">
+        <input type="checkbox" value="SBI" class="checkbox amctick" id="">
+        <label for="">SBI Technology Oppurtunities Fund</label> 
+    </div>
+
+
+ </div> 
+
+
+ <div class="filter_section cat">
+    <div class="filterHeading ">Category</div>
+    <div class="box">
+        <input type="checkbox" value="Debt" class="checkbox c_tick" >
+        <label for="">Debt</label> 
+    </div>
+    <div class="box">
+      <input type="checkbox" value="Equity" class="checkbox  c_tick" >
+      <label for="">Equity</label> 
+  </div>
+  <div class="box">
+      <input type="checkbox" value="Hybrid" class="checkbox  c_tick" >
+      <label for="">Hybrid</label> 
+  </div>
+  <div class="box">
+    <input type="checkbox" value="others" class="checkbox  c_tick" >
+    <label for="">Others</label> 
+</div>
+</div> 
+
+
+<div class="filter_section">
+    <div class="filterHeading">Risk</div>
+    <div class="box">
+        <input type="checkbox" value="Low Risk" class="checkbox R_tick" >
+        <label for="">Low</label> 
+    </div>
+    <div class="box">
+      <input type="checkbox" value="Moderate Risk" class="checkbox R_tick" >
+      <label for="">Moderate </label> 
+  </div>
+  <div class="box">
+      <input type="checkbox" value="High Risk" class="checkbox R_tick" >
+      <label for="">High</label> 
+  </div>
+ 
+</div> 
+
+<div class="filter_section">
+    <div class="filterHeading">Fund Size</div>
+    <div class="box">
+        <input type="checkbox" value="2" class="checkbox F_tick" >
+        <label for="">Upto 1,000cr</label> 
+    </div>
+    <div class="box">
+      <input type="checkbox" value="4" class="checkbox F_tick" >
+      <label for="">Upto 2,000cr </label> 
+  </div>
+  <div class="box">
+      <input type="checkbox" value="10" class="checkbox F_tick" >
+      <label for="">Upto 5,000cr</label> 
+  </div>
+  <div class="box">
+    <input type="checkbox" value="20" class="checkbox F_tick" >
+    <label for="">Upto 10,000cr</label> 
+</div>
+ 
+</div> 
+
+
+
+</div>
+
+ 
+    
+ <div class="right" id="right"></div>
+
+
+    </div>
+
+
+
+
+   <!-- -- footer - (START)-- -->
+
+   <div id="footer" style="margin-top:100px;">
+
+    <div class="cover1">
+        <div class="container max-w" style="padding-top: 30px;">
+
+            <div class="footer-1" id="fot-section-1">
+                <ul>
+                    <li style="margin:17px 0 17px -10px; cursor:pointer"><img
+                            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-light-groww.1815ad63.svg"
+                            width="150" height="50" alt="Groww Logo" itemprop="logo"> </li>
+                    <li>No.11, 2nd floor, 80 FT Road</li>
+                    <li>4th Block, S.T Bed, Koramangala</li>
+                    <li>Bengaluru - 560034</li>
+                    <li>
+                        <u style="cursor:pointer">Contact Us</u>
+                    </li>
+
+                    <li>
+                        <div class="socialMedia" style="margin-top:20px; margin-left:-10px">
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fb_icon_groww.1c94e937.svg"
+                                    width="40" height="30" alt="Groww FB Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/twitter_icon_groww.4cb988f6.svg"
+                                    width="40" height="30" alt="Groww Twitter Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/yt_icon_groww.ec96b677.svg"
+                                    width="40" height="30" alt="Youtube Groww">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/instagram_icon_groww.0454c1a2.svg"
+                                    width="40" height="30" alt="Groww Instagram Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/linkedin_icon_groww.b15f8240.svg"
+                                    width="40" height="30" alt="Groww Linkedin Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/telegram_icon_groww.f6524497.svg"
+                                    width="40" height="30" alt="Groww Telegram Page">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="fot-section-2"
+                style="display:flex; justify-content:space-between; width:66%; margin-top:17px;">
+                <div class="footer-2" style="padding-left:32px">
+                    <ul>
+                        <li class="fot-top-heading"> PRODUCTS </li>
+                        <li>Stocks</li>
+                        <li>Future & Options</li>
+                        <li>Mutual Funds</li>
+                        <li>Fixed Deposite</li>
+                        <li>US Stocks</li>
+                    </ul>
+                </div>
+
+                <div class="footer-3">
+                    <ul>
+                        <li class="fot-top-heading"> GROWW </li>
+                        <li>About Us</li>
+                        <li>Pricing</li>
+                        <li>Blog</li>
+                        <li>Media & Press</li>
+                        <li>Careers</li>
+                        <li>Help and Support</li>
+                    </ul>
+                </div>
+
+                <div class="footer-4">
+
+                    <ul>
+                        <li class="fot-top-heading"> QUICK LINKS</li>
+                        <li>AMC Mutual Funds</li>
+                        <li>Calculators</li>
+                        <li>Glossary</li>
+                        <li>Open Demat Account</li>
+                        <li>Groww Digest</li>
+                        <li>Sitemap</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="max-w">
+            <!-- -- underline-- -->
+
+            <div class="footerLine"></div>
+
+            <!-- -- copyright-section -- -->
+
+            <div class="copyRight" style="display:flex; align-items:center; justify-content:space-between;  padding-bottom: 10px;">
+                <div class="" style="display:flex; align-items:center;">ⓒ&nbsp;2016-2021 Groww. All rights reserved,
+                    Built
+                    with <span class="heartImg">♥</span>in India</div>
+                <div class="app-link" style="display:flex; align-items:center;  margin-top: 10px;">
+
+                    <div><a
+                            href="https://itunes.apple.com/us/app/groww-mutual-funds-app/id1404871703?ls=1&amp;mt=8">
+                            <img class=""
+                                src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/app-store-logo.060773ea.svg"
+                                width="147" height="45" alt="Download Groww App on apple store">
+                        </a></div>
+
+
+                    <div style= "margin-left:30px" ><a href="https://play.google.com/store/apps/details?id=com.nextbillion.groww">
+                            <img class=""
+                                src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-play-badge.0547a72f.svg"
+                                width="147" height="45" alt="Download Groww App on play store">
+                        </a></div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+<!-- -- footer - (END)-- -->
+
+
+    
+   
+</body>
+</html>
+
+<script src="/scripts/productapp.js">
+</script>
+
+<script src="/scripts/search_box.js"></script>
+<script src="/scripts/changeNavbar.js"></script>

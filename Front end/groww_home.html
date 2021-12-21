@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww - Online Demat, Trading application</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://groww.in/logo-groww270.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/search_box.css">
+</head>
+
+<body>
+
+    <!-- ----------- navbar (Start) ----------- -->
+
+    <nav class="max-w">
+        <div class="nav-div">
+            <div><a href="groww_home.html"><img class=""
+                        src="https://bit.ly/3nMw3oc"
+                        width="148" height="40" alt="Groww Logo" itemprop="logo"></a>
+            </div>
+
+            <div class="c-search">
+                <i class="material-icons">search</i><input type="search" id="search"
+                    placeholder="What are you looking for today?" />
+            </div>
+
+            <div id="thirdBox">
+                <a href="groww_signup.html"><button id="login-btn">Login/Register</button></a></li>
+                <div id="userAcc" class="dontDisplay">
+                    <img id="user" src="https://www.shareicon.net/data/2016/05/26/771188_man_512x512.png">
+                    <a href="groww_cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ----------- navbar (End) ----------- -->
+    <div id="logOutDropDown" class="noDropDownDisplay">
+        <div class="logout">Log Out</div>
+    </div>
+    <div id="dropDown" class="noDropDownDisplay"></div>
+
+
+    <div id="cont1" class="max-w" style="margin-top: 30px;">
+        <div id="first">
+
+            <div class="content">
+                <div class="body-1">
+                    <h1>Invest in</h1>
+                    <div class="slides">
+                        <div class="slide slide1"><span>Stocks</span></div>
+                        <div class="slide slide2"><span>Mutual Funds</span></div>
+                        <div class="slide slide3"><span>Future & options</span></div>
+                        <div class="slide slide4"><span>US Stocks</span></div>
+                        <div class="slide slide5"><span>IPO</span></div>
+                        <div class="slide slide6" area-hidden="true"><span>FDs</span></div>
+                    </div>
+                </div>
+                <div id="mid-text">
+                    <p>Trusted by <strong>Millions</strong> of Indians. Start investing </br> today. </p>
+                </div>
+                <div id="get-btn">
+                    <button>Get Started</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ------------ grid - type catogories ---------- -->
+
+        <div id="second">
+
+            <div id="cont">
+
+                <div> <a href="groww_products.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg"
+                            alt="">
+                        <div class="cont-text">Mutual Funds</div>
+                    </a> </div>
+                <div> <a href="growwStocks.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stockHome.af2af225.svg"
+                            alt="">
+                        <div class="cont-text">Stocks</div>
+                    </a> </div>
+                <div> <a href="growwFutureO.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/optionHome.5e98a896.svg"
+                            alt="">
+                        <div class="cont-text">Future & Options</div>
+                    </a> </div>
+                <div> <a href="growwUS_stock.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/usHome.fcb18f99.svg"
+                            alt="">
+                        <div class="cont-text">US Stocks</div>
+                    </a> </div>
+                <div> <a href="growwIpo.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ipoHome.b071ba94.svg"
+                            alt="">
+                        <div class="cont-text">IPO</div>
+                    </a> </div>
+                <div> <a href="growwFd.html"> <img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fdHome.ba2c5441.svg"
+                            alt="">
+                        <div class="cont-text">Fixed Deposits</div>
+                    </a> </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="max-w">
+        <div id="chip-text">
+            <span>OUR PRODUCTS</span>
+        </div>
+
+        <h2 class="heading-text">Your money. Your choice.</h2>
+
+    </div>
+
+    <!-- -------  slide - options ------- -->
+
+    <div class="max-w">
+        <div class="tab-wrapper">
+            <div class="tab-text1 ">
+                <div class="tab-wrapper color-hover" onclick="show()">
+                    <div><img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stock_product.d051478a.svg"
+                            width="40" height="40" alt="Groww"></div>
+                    <div class="tab-text2">Stocks</div>
+                </div>
+                <!-- <div class="indicator"></div> -->
+            </div>
+            <div class="tab-text1">
+                <div class="tab-wrapper color-hover  mutual-fund" onclick="show1()">
+                    <div><img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mf_product.ac8adcdd.svg"
+                            width="40" height="40" alt="Groww"></div>
+                    <div class="tab-text2">Mutual Funds</div>
+                </div>
+                <!-- <div class = "indicator" ></div> -->
+
+            </div>
+            <div class="tab-text1">
+                <div class="tab-wrapper color-hover us-stocks" onclick="show2()">
+                    <div><img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/us_product.bd76aa25.svg"
+                            width="40" height="40" alt="Groww"></div>
+                    <div class="tab-text2">US Stocks</div>
+                </div>
+            </div>
+            <div class="tab-text1">
+                <div class="tab-wrapper color-hover" onclick="show3()">
+                    <div><img
+                            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fd_product.72e6a2ed.svg"
+                            width="40" height="40" alt="Groww"></div>
+                    <div class="tab-text2">FDs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -- data from JS -- -->
+
+        <div id="data">
+
+            <!-- -- default part -- -->
+
+            <div class="container">
+                <div><img
+                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stocks.74948e96.png"
+                        class="img-1"></div>
+                <div class="div-text">
+                    <div class="text-part">
+                        <h1 class="h-bold"><span>Zero </span>account charges </h1>
+                        <p class="para"> You don't have to pay a single rupee for opening a stocks account or account
+                            maintanace </p>
+                        <button class="create-btn"> Create Account For Free </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="animation-div">
+        <div class="max-w">
+            <div class="hs33TextWrapper">
+                <div class="hs33Heading">Trusted by</div>
+                <div class="hs33Heading">10 Million+ users</div>
+                <div class="hs33Para">We’ve got the ISO 27001:2013 certification to show for it! Our cutting-edge
+                    technology
+                    ensure that all your information remains fully encrypted and secure.</div>
+            </div>
+            <!-- <div class="anim-img hs33TextWrapper">
+                <img src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/shield-groww.0d0cc15e.png"
+                    alt="lock">
+            </div> -->
+        </div>
+    </div>
+
+    <div id="section-three" class="max-w">
+        <div id="section-three-heading" class="max-w">
+            Keep learning. Keep growing.
+        </div>
+
+        <div id="section-three-img" class="max-w">
+
+            <a href="#"> <img class=""
+                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog1.d3a78143.png"
+                    width="350" height="275" alt="blog img">
+                <div>
+                    <p>How to Select/Pick Stocks for Intraday </p>
+                </div>
+            </a>
+
+
+            <a href="#"> <img class=""
+                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog2.2eea33cc.png"
+                    width="350" height="275" alt="blog img">
+                <div>
+                    <p>Beginners Guide to Mutual Funds </p>
+                </div>
+            </a>
+
+
+            <a href="#"> <img class=""
+                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog3.5bbd4db3.png"
+                    width="350" height="275" alt="blog img">
+                <div>
+                    <p>How to Diversify in the Time of Market Volatility</p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div style="margin-top: 60px;" class="view-more">
+        <a href="#"> <span> View all articles </span> <span> &#8594; </span> </a>
+    </div>
+
+    <section id="press-section" class="max-w">
+        <div style="display:flex; align-items: center; width:100%">
+            <div class="border-line right"></div>
+            <span id="heading">
+                In The Press
+            </span>
+            <div class="border-line left"></div>
+        </div>
+
+        <!-- -------- -->
+
+        <div  class="press-name" style="display:flex; align-items:center; justify-content: space-between; margin-top: 30px;"><a
+                href="https://groww.in/p/press/" target="_blank">
+                <div><img
+                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ys.9166bd37.svg"
+                        width="166" height="88" alt="ys"></div>
+            </a><a href="https://groww.in/p/press/" target="_blank">
+                <div><img
+                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/live.7edf8d7a.svg"
+                        width="166" height="88" alt="live"></div>
+            </a><a href="https://groww.in/p/press/" target="_blank">
+                <div><img
+                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/business.dc402a84.svg"
+                        width="166" height="88" alt="business"></div>
+            </a><a href="https://groww.in/p/press/" target="_blank">
+                <div><img
+                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/enter.09e9d78c.svg"
+                        width="166" height="88" alt="ent"></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="testonomials" style="margin-top:30px; margin-bottom:30px;">
+
+        <div class="max-w">
+            <div>
+                <div class="heading">Creating proud investors.</div>
+
+                <div style="display:flex; align-items:center; justify-content: space-between;" class="view-more">
+                    <div id="para">You can feel the pride of being a Groww investor in their words.</div>
+                    <a href="#"> <span> View More</span> <span> &#8594; </span> </a>
+                </div>
+
+                <!-- -- card -- -->
+                
+                <div id="card-div"
+                    style="display:flex; align-items:center; justify-content: space-between; margin-top: 40px; width:100%">
+
+                    <a href="#">
+                        <div class="card">
+
+                            <div class="profile-img display-flx">
+
+                                <div><img class="UserImg"
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ankitImg.863e0afa.png"
+                                        width="56" height="56" alt="Ankit"></div>
+
+                                <div><i class="material-icons is31Default t39Star"
+                                        style="width: 24px;height: 24px;font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i></div>
+                            </div>
+
+                            <div class="say">“Groww.in was the platform where I first got onboard to MF and I would
+                                have to say, even for a beginner like me it made things quite easier to explore and
+                                invest.</div>
+                            <div class="name">Ankit Puri</div>
+                            <div class="company">Product Specialist, Google</div>
+
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+
+                            <div class="profile-img display-flx">
+
+                                <div><img class="UserImg"
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/amitImg.ebb056f0.jpeg"
+                                        width="56" height="56" alt="Amit"></div>
+
+                                <div><i class="material-icons is31Default t39Star"
+                                        style="width: 24px;height: 24px;font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons is31Default t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i></div>
+                            </div>
+
+                            <div class="say">“Actually, the UI is extremely simple and easy for users to adapt, that’s
+                                what makes it unique. Many of my referrals have also joined and enjoying GROWW.</div>
+                            <div class="name">Amit Sharma</div>
+                            <div class="company">Solutions Architect, Amazon Web Services</div>
+
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+
+                            <div class="profile-img display-flx">
+
+                                <div><img class="UserImg"
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/roopaImg.5575c84f.jpg"
+                                        width="56" height="56" alt="Roopa"></div>
+
+                                <div><i class="material-icons  t39Star"
+                                        style="width: 24px;height: 24px;font-size: 24px;">grade</i><i
+                                        class="material-icons  t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons  t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons  t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i><i
+                                        class="material-icons  t39Star"
+                                        style="width: 24px; height: 24px; font-size: 24px;">grade</i></div>
+                            </div>
+
+                            <div class="say">“If you are one of those who would like to take control of how you save,
+                                use Groww. It’s ridiculously easy portal. It just took me 5 mins to set up and invest.
+                            </div>
+                            <div class="name">Roopa Ambekar</div>
+                            <div class="company">Product Specialist, Google</div>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- -- invest anywhere -- app - link -- -->
+
+    <div class="max-w" id="invest-anywhere">
+
+        <section style="margin-top:40px;">
+
+            <div class="invest-class" style="display:flex; align-items:center; width: 100%;">
+
+                <!-- -- text part - left - heading part -- -->
+
+                <div class = "invest-left-part">
+
+                    <div class="i-text">Invest anywhere,</div>
+                    <div class="i-text">anytime.</div>
+                    <div class="i-para">Don’t worry about which device to use. Because we’re in every one of them.</div>
+
+                    <div class="i-img" style="display:flex; align-items:center; align-items: baseline;">
+
+                        <div style="display:flex; align-items:center;">
+
+                            <div> <img style="margin-right: 35px;" class="hp99BotImg"
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/dash.a7e0c55c.svg"
+                                    width="48" height="48" alt="img"> </div>
+
+                            <div>
+
+                                <div class="i-img-text">Stay on top of everything</div>
+                                <div class="i-img-para">Keep track of your investments at anytime with Groww.</div>
+
+                            </div>
+
+                        </div>
+
+                        <div style="display:flex; align-items:center; margin-top: 40px;">
+
+                            <div> <img style="margin-right: 35px;" class="hp99BotImg"
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/sync.3ac006aa.svg"
+                                    width="48" height="48" alt="img"> </div>
+
+                            <div>
+
+                                <div class="i-img-text">Always in Sync</div>
+                                <div class="i-img-para">Groww will take care of synchronizing data so you can focus on
+                                    investing.</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- -- right - img -- -->
+
+                <div id="three-img" style="display:flex; align-items:center;">
+
+                    <!-- -- 1st part - 2 img -- -->
+                    <div>
+
+                        <div>
+                            <a href="https://itunes.apple.com/us/app/groww-mutual-funds-app/id1404871703?ls=1&amp;mt=8">
+                                <img class="iosImg hover-img"
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ios.0a99dcbb.png"
+                                    width="255" height="356" alt="ios">
+                            </a>
+                        </div>
+                        <div style="margin-top:30px">
+                            <a href="https://play.google.com/store/apps/details?id=com.nextbillion.groww">
+                                <img class="andImg hover-img"
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/android.6dfb12ca.png"
+                                    width="255" height="357" alt="android">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- -- 2nd part - 1 img - in center -- -->
+                    <div class = "invest-3-img">
+                        <a href="groww_home.html">
+                            <img class="webImg hover-img"
+                                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/web.634ac717.png"
+                                width="255" height="357" alt="web">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- -- get in touch -- -->
+
+    <section id="support" class="max-w">
+        <div class="ss34Wrapper">
+            <div class="absolute-center ss34TextWrapper">
+                <div class="heading ">We’re with you, at every step.</div>
+                <div class="para ss34ParaText">For any query you have, find the answer quickly on our Help &amp;
+                    Support. Need a little more help? We’re happy to talk via call or chat.</div>
+                <div class="ss34GPlayDiv">
+                    <div class="">
+                        <div class="btn51Btn  btn51Secondary" style="width: 200px; height: 50px; font-size: 16px;">
+                            <div class="absolute-center btn51ParentDimension"><span class="absolute-center"
+                                    style="padding: 0px 25px;"><span style="margin-top:14px;">Get In Touch</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lazyload-wrapper"><img class="ss34Img"
+                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/hns-support-img.c56178f0.png"
+                    width="261" height="327" alt="Help and Support - Groww"></div>
+        </div>
+    </section>
+
+
+    <!-- -- footer - (START)-- -->
+
+    <div id="footer" style="margin-top:100px;">
+
+        <div class="cover1">
+            <div class="container max-w" style="padding-top: 30px;">
+
+                <div class="footer-1" id="fot-section-1">
+                    <ul>
+                        <li style="margin:17px 0 17px -10px; cursor:pointer"><img
+                                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-light-groww.1815ad63.svg"
+                                width="150" height="50" alt="Groww Logo" itemprop="logo"> </li>
+                        <li>No.11, 2nd floor, 80 FT Road</li>
+                        <li>4th Block, S.T Bed, Koramangala</li>
+                        <li>Bengaluru - 560034</li>
+                        <li>
+                            <u style="cursor:pointer">Contact Us</u>
+                        </li>
+
+                        <li>
+                            <div class="socialMedia" style="margin-top:20px; margin-left:-10px">
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fb_icon_groww.1c94e937.svg"
+                                        width="40" height="30" alt="Groww FB Page">
+                                </a>
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/twitter_icon_groww.4cb988f6.svg"
+                                        width="40" height="30" alt="Groww Twitter Page">
+                                </a>
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/yt_icon_groww.ec96b677.svg"
+                                        width="40" height="30" alt="Youtube Groww">
+                                </a>
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/instagram_icon_groww.0454c1a2.svg"
+                                        width="40" height="30" alt="Groww Instagram Page">
+                                </a>
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/linkedin_icon_groww.b15f8240.svg"
+                                        width="40" height="30" alt="Groww Linkedin Page">
+                                </a>
+                                <a href="#">
+                                    <img class=""
+                                        src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/telegram_icon_groww.f6524497.svg"
+                                        width="40" height="30" alt="Groww Telegram Page">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="fot-section-2"
+                    style="display:flex; justify-content:space-between;  margin-top:17px;">
+                    <div class="footer-2" style="padding-left:32px">
+                        <ul>
+                            <li class="fot-top-heading"> PRODUCTS </li>
+                            <li>Stocks</li>
+                            <li>Future & Options</li>
+                            <li>Mutual Funds</li>
+                            <li>Fixed Deposite</li>
+                            <li>US Stocks</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-3">
+                        <ul>
+                            <li class="fot-top-heading"> GROWW </li>
+                            <li>About Us</li>
+                            <li>Pricing</li>
+                            <li>Blog</li>
+                            <li>Media & Press</li>
+                            <li>Careers</li>
+                            <li>Help and Support</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-4">
+
+                        <ul>
+                            <li class="fot-top-heading"> QUICK LINKS</li>
+                            <li>AMC Mutual Funds</li>
+                            <li>Calculators</li>
+                            <li>Glossary</li>
+                            <li>Open Demat Account</li>
+                            <li>Groww Digest</li>
+                            <li>Sitemap</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="max-w">
+                <!-- -- underline-- -->
+
+                <div class="footerLine"></div>
+
+                <!-- -- copyright-section -- -->
+
+                <div class="copyRight"
+                    style="display:flex; align-items:center; justify-content:space-between;  padding-bottom: 10px;">
+                    <div class="" style="display:flex; align-items:center;">ⓒ&nbsp;2016-2021 Groww. All rights reserved,
+                        Built
+                        with <span class="heartImg">♥</span>in India</div>
+                    <div class="app-link" style="display:flex; align-items:center;  margin-top: 10px;">
+
+                        <div><a
+                                href="https://itunes.apple.com/us/app/groww-mutual-funds-app/id1404871703?ls=1&amp;mt=8">
+                                <img class=""
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/app-store-logo.060773ea.svg"
+                                    width="147" height="45" alt="Download Groww App on apple store">
+                            </a></div>
+
+
+                        <div style="margin-left:30px"><a
+                                href="https://play.google.com/store/apps/details?id=com.nextbillion.groww">
+                                <img class=""
+                                    src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-play-badge.0547a72f.svg"
+                                    width="147" height="45" alt="Download Groww App on play store">
+                            </a></div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- -- footer - (END)-- -->
+
+
+
+    <!-- -- image hover animation -- JS - Part -- -->
+    
+    <!-- ------   == (web) VanillaTilt JS ==  ------ -->
+
+    <script type="text/javascript" src="/scripts/Vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".hover-img"), {
+            max: 25,
+            speed: 300,
+            // gyroscope:true,
+            // perspective:1000,
+        });
+
+        //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".hover-img"));
+    </script>
+
+</body>
+
+<script>
+
+    // image - slide - JS
+
+    let data = document.getElementById("data");
+
+    // ==============
+
+    // var marker = document.querySelector("#indicator")
+    // var item = document.querySelectorAll("")
+
+    // ==============
+
+    function show() {
+        data.innerHTML = null;
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "container")
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+
+        let para = document.createElement("div");
+        para.setAttribute("class", "text-part")
+        para.innerHTML = `<h1  class = "h-bold"><span>Zero </span>account charges </h1>
+ <p class = "para"> You don't have to pay a single rupee for opening a stocks account or account maintanace </p>
+ <button class = "create-btn" > Create Account For Free </button>
+ `
+
+        div1.setAttribute("class", "div-text")
+        div1.append(para)
+
+        let img = document.createElement("img");
+        img.src = "https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/stocks.74948e96.png";
+        img.setAttribute("class", "img-1");
+
+        div2.append(img);
+
+        div.append(div2, div1);
+
+        data.append(div);
+
+    }
+
+    function show1() {
+
+        data.innerHTML = null;
+
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "container")
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+
+        let para = document.createElement("div");
+        para.innerHTML = `<h1 class = "h-bold"><span> 0% </span>commision </h1>
+<p class = "para"> Select from 5000+ direct mutual funds and get higher return than regular funds.</p>
+<button class = "create-btn" > Create Account For Free </button>
+`
+
+        div1.setAttribute("class", "div-text")
+        div1.append(para)
+
+        let img = document.createElement("img");
+        img.src = "https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mf.6c2cde91.png";
+        img.setAttribute("class", "img-1");
+
+        div2.append(img);
+
+        div.append(div2, div1);
+
+        data.append(div);
+
+    }
+
+    function show2() {
+
+        data.innerHTML = null;
+
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "container")
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+
+        let para = document.createElement("div");
+        para.innerHTML = `<h1  class = "h-bold"><span> Free </span>commision </h1>
+<p class = "para"> Invest in Apple, Google, Netflix and many more US companies that you love without any brokerage fee.</p>
+<button class = "create-btn" > Create Account For Free </button>
+`
+
+        div1.setAttribute("class", "div-text")
+        div1.append(para)
+
+        let img = document.createElement("img");
+        img.src = "https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/us.fc57ceac.png";
+        img.setAttribute("class", "img-1");
+
+        div2.append(img);
+
+        div.append(div2, div1);
+
+        data.append(div);
+
+    }
+
+
+    function show3() {
+
+        data.innerHTML = null;
+
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "container")
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+
+        let para = document.createElement("div");
+        para.innerHTML = `<h1  class = "h-bold"><span>6.7% </span>interest rate </h1>
+<p class = "para">Open fixed deposits in any bank with higher interest rates without opening a bank account.</p>
+<button class = "create-btn" > Create Account For Free </button>
+`
+
+        div1.setAttribute("class", "div-text")
+        div1.append(para)
+
+        let img = document.createElement("img");
+        img.src = "https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fd.16c65ccc.png";
+        img.setAttribute("class", "img-1");
+
+        div2.append(img);
+
+        div.append(div2, div1);
+
+        data.append(div);
+
+    }
+
+    // debounce 
+
+    let searchInput = document.getElementById("search");
+
+    searchInput.oninput = () => {
+        deBounce(showData, 1000);
+    };
+        
+    let timerId;
+    let dropdownBox = document.getElementById("dropDown");
+    function showData(){
+        let inputValue = document.getElementById("search").value;
+        fetch("http://localhost:3000/api/products")
+        .then((res) => {
+            return res.json();
+        })
+        .then((res) => {
+            console.log("For Search: ", res);
+            let productArr = [];
+            res.forEach(function(data){
+                let temp = "";
+                for(let i = 0; i < data.product_name.length; i++){
+                    temp += data.product_name[i];
+                    let tempLower = temp.toLowerCase();
+                    if(inputValue == temp || inputValue == tempLower){
+                        console.log(data.product_name);
+                        productArr.push(data);
+                    }
+                }
+                dropDown(productArr);
+            });
+
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
+
+    function dropDown(product){
+        dropdownBox.innerHTML = null;
+        dropdownBox.setAttribute("class", "dropDown");
+        product.forEach((el) => {
+            let div = document.createElement("div");
+            div.setAttribute("class", "dropDownDiv");
+            let prodName = document.createElement("div");
+            prodName.innerHTML = el.product_name;
+            prodName.setAttribute("class", "dropDownName");
+
+            div.onclick = () => {
+                goToProduct(el);
+            }
+
+            div.append(prodName);
+            dropdownBox.append(div);
+        });
+    }
+
+    let productArr = JSON.parse(localStorage.getItem("itemData"));
+
+    function goToProduct(el){
+        productArr[0] = el;
+        localStorage.setItem("itemData", JSON.stringify(productArr));
+        console.log(productArr);
+        window.location.href = "groww_product_description.html";
+    }
+
+    function deBounce(func, delay){
+        if(timerId){
+            clearTimeout(timerId);
+        }
+        timerId = setTimeout(function(){
+            func();
+        }, delay);
+}
+
+</script>
+
+<script src="/scripts/changeNavbar.js"></script>
+
+</html>

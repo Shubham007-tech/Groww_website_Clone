@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww - Product Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel = "icon" href = "https://groww.in/logo-groww270.png" type = "image/x-icon"> 
+    <link rel = "stylesheet" href="/styles/navbar.css">
+    <link rel = "stylesheet" href="/styles/product_description.css">
+    <link rel="stylesheet" href="/styles/search_box.css"> 
+</head>
+<body>
+
+    <nav class="max-w">
+        <div class="nav-div">
+            <div><a href="groww_home.html"><img class=""
+                        src="https://bit.ly/3nMw3oc"
+                        width="148" height="40" alt="Groww Logo" itemprop="logo"></a>
+            </div>
+
+            <div class="c-search">
+                <i class="material-icons">search</i><input type="search" id="search"
+                    placeholder="What are you looking for today?" />
+            </div>
+
+            <div id="thirdBox">
+                <a href="groww_signup.html"><button id="login-btn">Login/Register</button></a></li>
+                <div id="userAcc" class="dontDisplay">
+                    <img id="user" src="https://www.shareicon.net/data/2016/05/26/771188_man_512x512.png">
+                    <a href="groww_cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="logOutDropDown" class="noDropDownDisplay">
+        <div class="logout">Log Out</div>
+    </div>
+    <div id="dropDown" class="noDropDownDisplay"></div>
+
+    <div id="container">
+        
+        <div id="leftContainer">
+            <div id="titleDetails"></div>
+            <div id="graphDetails">
+                <div>
+                    <div class="graphDesc">
+                        <div id="percentageOne"></div>
+                        <div class="percentageDur">3Y annualised</div>
+                    </div>
+                    <div class="graphDescTwo">
+                        <div id="percentageTwo"></div>
+                        <div class="percentageDur">1D</div>
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+                <div id="graphInterval">
+                    <div id="graphOneYear" class="onclicked">1Y</div>
+                    <div id="graphSixMonth" class="onNotclicked">6M</div>
+                    <div id="graphOneMonth" class="onNotclicked">1M</div>
+                </div>
+            </div>
+            <div class="proDetails">
+                <div class="detListLeft">
+                    <div class="points">
+                        <div class="subHead">NAV:13 Nov 2021</div>
+                        <div id="navValue">NA</div>
+                    </div>
+                    <div class="points">
+                        <div class="subHead">Min. SIP amount</div>
+                        <div id="sipValue">₹100</div>
+                    </div>
+                </div>
+                <div class="detListRight">
+                    <div class="points">
+                        <div class="subHead">Rating</div>
+                        <div id="ratingValue">NA</div>
+                    </div>
+                    <div class="points">
+                        <div class="subHead">Fund size</div>
+                        <div id="fundValue">NA</div>
+                    </div>
+                </div>
+            </div>
+            <div id="returnCalDetails">
+                <h3>Return calculator</h3>
+                <div class="returnCalculatorTable">
+                    <div class="returnCalTitle">
+                        <div>Monthly SIP</div>
+                    </div>
+                    <div id="returnCalRange">
+                        <div id="rangeValue">₹5,000 per month</div>
+                        <input type="range" name="Principal" id="pr" step="100" value="5000" min="100" max="50000">
+                    </div>
+                    <div id="returnCalInterval">
+                        <div id="intervalOneYear" class="onclicked">1 year</div>
+                        <div id="intervalThreeYear" class="onNotclicked">3 years</div>
+                        <div id="intervalFiveYear" class="onNotclicked">5 years</div>
+                    </div>
+                    <div id="returnCalAmountDet">
+                        <div id="returnCalDetOne">Total investment of ₹60000</div>
+                        <div id="returnCalDetTwo"></div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="returnRankings">
+                <h3>Returns and rankings</h3>
+                <div class="returnRankingsTable">
+                    <div class="rowStyle">
+                        <div class="rowDetOne"></div>
+                        <div class="rowDet">1Y</div>
+                        <div class="rowDet">3Y</div>
+                        <div class="rowDet">5Y</div>
+                        <div class="rowDet">All</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Fund returns</div>
+                        <div class="rowDet">96.8%</div>
+                        <div class="rowDet">42.5%</div>
+                        <div class="rowDet">34.6%</div>
+                        <div class="rowDet">28.0%</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Category average</div>
+                        <div class="rowDet">94.2%</div>
+                        <div class="rowDet">29.7%</div>
+                        <div class="rowDet">24.2%</div>
+                        <div class="rowDet">32.19%</div>
+                    </div>
+                    <div class="rowStyleLast">
+                        <div class="rowDetOne">Rank with in category</div>
+                        <div class="rowDet">1</div>
+                        <div class="rowDet">1</div>
+                        <div class="rowDet">2</div>
+                        <div class="rowDet">5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="returnRankings">
+                <h3>Similar funds</h3>
+                <div class="returnRankingsTable">
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Equity, Sectoral / Thematic funds</div>
+                        <div class="rowDet">Rating</div>
+                        <div class="rowDet">1Y</div>
+                        <div class="rowDet">3Y</div>
+                        <div class="rowDet">Fund size(Cr)</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">BNP Paribas India Consumption Fund Direct Growth</div>
+                        <div class="rowDet">5★</div>
+                        <div class="rowDet">56.6%</div>
+                        <div class="rowDet">27.6%</div>
+                        <div class="rowDet">871.03</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Invesco India Infrastructure Fund Direct Growth</div>
+                        <div class="rowDet">5★</div>
+                        <div class="rowDet">90.2%</div>
+                        <div class="rowDet">27.0%</div>
+                        <div class="rowDet">288.41</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Canara Robeco Consumer Trends Fund Direct Growth</div>
+                        <div class="rowDet">5★</div>
+                        <div class="rowDet">92.7%</div>
+                        <div class="rowDet">21.8%</div>
+                        <div class="rowDet">1,123.50</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Franklin Build India Direct Fund Growth</div>
+                        <div class="rowDet">5★</div>
+                        <div class="rowDet">60.0%</div>
+                        <div class="rowDet">26.6%</div>
+                        <div class="rowDet">725.60</div>
+                    </div>
+                    <div class="rowStyleLast">
+                        <div class="rowDetOne">SBI Banking & Financial Services Fund Direct Growth</div>
+                        <div class="rowDet">5★</div>
+                        <div class="rowDet">55.5%</div>
+                        <div class="rowDet">21.2%</div>
+                        <div class="rowDet">2,948.25</div>
+                    </div>
+                </div>   
+            </div>
+            <div class="returnRankings">
+                <h3>Holdings</h3>
+                <div class="returnRankingsTable">
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Name</div>
+                        <div class="rowDet">Sector</div>
+                        <div class="rowDet">Instrument</div>
+                        <div class="rowDet">Assets</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Infosys Ltd.</div>
+                        <div class="rowDet">Technology</div>
+                        <div class="rowDet">Equity</div>
+                        <div class="rowDet">18.9%</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">HCL Technologies Ltd.</div>
+                        <div class="rowDet">Technology</div>
+                        <div class="rowDet">Equity</div>
+                        <div class="rowDet">9.4%</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Tech Mahindra Ltd.</div>
+                        <div class="rowDet">Technology</div>
+                        <div class="rowDet">Equity</div>
+                        <div class="rowDet">8.8%</div>
+                    </div>
+                    <div class="rowStyle">
+                        <div class="rowDetOne">Tata Consultancy Services Ltd.</div>
+                        <div class="rowDet">Technology</div>
+                        <div class="rowDet">Equity</div>
+                        <div class="rowDet">8.6%</div>
+                    </div>
+                    <div class="rowStyleLast">
+                        <div class="rowDetOne">Persistent Services Ltd.</div>
+                        <div class="rowDet">Technology</div>
+                        <div class="rowDet">Equity</div>
+                        <div class="rowDet">5.2%</div>
+                    </div>
+                </div>   
+            </div>
+            <div id="prosConsCont">
+                <h3>Pros and cons</h3>
+                <div id="proBox">
+                    <div class="pros">
+                        <div class="proDet">
+                            <i class="material-icons">thumb_up</i>
+                            <div>Pros</div>
+                        </div>
+                        <div class="proDetTwo">
+                            <div class="proPoints">3Y and 5Y annualised returns higher than category average</div>
+                        </div>
+                        <div class="proDetTwo">
+                            <div class="proPoints">Higher alpha: 5.35 
+                                The fund has generated returns higher than benchmark - S&P BSE IT TRI - in the last 3Y </div>
+                        </div>
+                        <div class="proDetTwo">
+                            <div class="proPoints">Lower expense ratio: 0.79%</div>
+                        </div>
+                        <div class="proDetTwo">
+                            <div class="proPoints">Consistently top ranked fund</div>
+                        </div>
+                    </div>
+                    <div class="pros">
+                        <div class="proDet">
+                            <i id="thumbsDown" class="material-icons">thumb_down</i>
+                            <div>Cons</div>
+                        </div>
+                        <div class="proDetTwo">
+                            <div class="proPoints">1Y annualised returns lower than category average by 0.2%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="minAmountDetails">
+                <h3>Minimum investment amounts</h3>
+                <div class="proDetails">
+                    <div class="detListLeft">
+                        <div class="points">
+                            <div class="subHead">Min. for 1st investment</div>
+                            <div class="subHead" style="color: rgb(68, 66, 66);">₹5,000</div>
+                        </div>
+                        <div class="points">
+                            <div class="subHead" style="text-align: left; margin-left: 6.5%;">Min. for 2nd investment onwards</div>
+                            <div class="subHead" style="margin-left: -6.5%; color: rgb(68, 66, 66);">₹1,000</div>
+                        </div>
+                    </div>
+                    <div class="detListRight">
+                        <div class="points">
+                            <div class="subHead">Min. for SIP</div>
+                            <div class="subHead" style="color: rgb(68, 66, 66);">₹100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="rightContainer">
+            <div class="rupeeSymbol">₹</div>
+            <div id="calendarIcon">
+                <i class="material-icons">event</i>
+            </div>
+            <div class="optBtns">
+                <div id="monthlySip" class="whenClicked">MONTHLY SIP</div>
+                <div id="oneTime" class="whenNotClicked">ONE-TIME</div>
+            </div>
+            <div id="paymentOpt"> 
+                <div id="sipAmount">
+                    <div id="inputLabel">SIP Amount</div>
+                    <input type="number" id="sipAmountInput" placeholder="0" max="100000">
+                </div>
+                <div id="sipCal">
+                    <div id="dateLabel">Monthly SIP Date</div>
+                    <input type="date" id="sipCalInput" value="2021-11-15" data-date-format="YYYY MM DD" >
+                </div>
+                <div id="paymentNote">Next SIP Instalment on 15-12-2021</div>
+            </div>
+            <div class="addToCart">
+                <div id="addToCartBtn">ADD TO CART</div>
+                <div id="goToCartBtn">GO TO CART</div>
+            </div>
+        </div>
+
+
+    </div>
+
+ <div id="footer" style="margin-top:100px;">
+
+    <div class="cover1">
+        <div class="container max-w" style="padding-top: 30px;">
+
+            <div class="footer-1" id="fot-section-1">
+                <ul>
+                    <li style="margin:17px 0 17px -10px; cursor:pointer"><img
+                            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-light-groww.1815ad63.svg"
+                            width="150" height="50" alt="Groww Logo" itemprop="logo"> </li>
+                    <li>No.11, 2nd floor, 80 FT Road</li>
+                    <li>4th Block, S.T Bed, Koramangala</li>
+                    <li>Bengaluru - 560034</li>
+                    <li>
+                        <u style="cursor:pointer">Contact Us</u>
+                    </li>
+
+                    <li>
+                        <div class="socialMedia" style="margin-top:20px; margin-left:-10px">
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fb_icon_groww.1c94e937.svg"
+                                    width="40" height="30" alt="Groww FB Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/twitter_icon_groww.4cb988f6.svg"
+                                    width="40" height="30" alt="Groww Twitter Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/yt_icon_groww.ec96b677.svg"
+                                    width="40" height="30" alt="Youtube Groww">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/instagram_icon_groww.0454c1a2.svg"
+                                    width="40" height="30" alt="Groww Instagram Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/linkedin_icon_groww.b15f8240.svg"
+                                    width="40" height="30" alt="Groww Linkedin Page">
+                            </a>
+                            <a href="#">
+                                <img class=""
+                                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/telegram_icon_groww.f6524497.svg"
+                                    width="40" height="30" alt="Groww Telegram Page">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="fot-section-2"
+                style="display:flex; justify-content:space-between; width:66%; margin-top:17px;">
+                <div class="footer-2" style="padding-left:32px">
+                    <ul>
+                        <li class="fot-top-heading"> PRODUCTS </li>
+                        <li>Stocks</li>
+                        <li>Future & Options</li>
+                        <li>Mutual Funds</li>
+                        <li>Fixed Deposite</li>
+                        <li>US Stocks</li>
+                    </ul>
+                </div>
+
+                <div class="footer-3">
+                    <ul>
+                        <li class="fot-top-heading"> GROWW </li>
+                        <li>About Us</li>
+                        <li>Pricing</li>
+                        <li>Blog</li>
+                        <li>Media & Press</li>
+                        <li>Careers</li>
+                        <li>Help and Support</li>
+                    </ul>
+                </div>
+
+                <div class="footer-4">
+
+                    <ul>
+                        <li class="fot-top-heading"> QUICK LINKS</li>
+                        <li>AMC Mutual Funds</li>
+                        <li>Calculators</li>
+                        <li>Glossary</li>
+                        <li>Open Demat Account</li>
+                        <li>Groww Digest</li>
+                        <li>Sitemap</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="max-w">
+            <!-- -- underline-- -->
+
+            <div class="footerLine"></div>
+
+            <!-- -- copyright-section -- -->
+
+            <div class="copyRight" style="display:flex; align-items:center; justify-content:space-between;  padding-bottom: 10px;">
+                <div class="" style="display:flex; align-items:center;">ⓒ&nbsp;2016-2021 Groww. All rights reserved,
+                    Built
+                    with <span class="heartImg">♥</span>in India</div>
+                <div class="app-link" style="display:flex; align-items:center;  margin-top: 10px;">
+
+                    <div><a
+                            href="https://itunes.apple.com/us/app/groww-mutual-funds-app/id1404871703?ls=1&amp;mt=8">
+                            <img class=""
+                                src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/app-store-logo.060773ea.svg"
+                                width="147" height="45" alt="Download Groww App on apple store">
+                        </a></div>
+
+
+                    <div style= "margin-left:30px" ><a href="https://play.google.com/store/apps/details?id=com.nextbillion.groww">
+                            <img class=""
+                                src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-play-badge.0547a72f.svg"
+                                width="147" height="45" alt="Download Groww App on play store">
+                        </a></div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+<script type="module">
+
+    import { showDescription, addToCart, goToCart, showMonthlySip, showOneTime, calendar } from "/scripts/product_desc_scripts.js";
+    import { getData, appendingData, graph } from "/scripts/graph.js";
+    getData();
+
+    let addToCartBtn = document.getElementById("addToCartBtn");
+    let goToCartBtn = document.getElementById("goToCartBtn");
+    let calendarSel = document.getElementById("sipCalInput");
+
+    addToCartBtn.onclick = function(){
+        addToCart();
+    }
+    goToCartBtn.onclick = function(){
+        goToCart();
+    }
+    monthlySip.onclick = function(){
+        showMonthlySip();
+    }
+    oneTime.onclick = function(){
+        showOneTime();
+    }
+    calendarSel.onchange = function(){
+        calendar();
+    }
+
+</script>
+
+<script src="/scripts/search_box.js"></script>
+<script src="/scripts/changeNavbar.js"></script>
