@@ -13,10 +13,10 @@ All the services are enabled to the users through its mobile and web application
 ## Groww Clone
 
 ### Sign up Page
-![](https://github.com/Shubham007-tech/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Signup.png)
+![](https://github.com/Shubham007-tech/Groww_website_Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Signup.png)
 
 ### Home Page
-![](https://github.com/Shubham007-tech/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Home%20Page.png)
+![](https://github.com/Shubham007-tech/Groww_website_Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Home%20Page.png)
 
 ### Product Page
 ![](https://github.com/Shubham007-tech/Groww-Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Product%20Page.png)
