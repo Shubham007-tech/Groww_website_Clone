@@ -1,4 +1,4 @@
-# [Groww](https://github.com/taherahmed14/Groww-Clone)
+# [Groww](https://github.com/Shubham007-tech/Groww_website_Clone)
 
 <table>
 <tr>
@@ -39,7 +39,7 @@ Want to run in your local Machine? Great!
 
 To run, follow these steps:
 
-- Clone my repository `https://github.com/taherahmed14/Groww-Clone`
+- Clone my repository `https://github.com/Shubham007-tech/Groww_website_Clone`
 - Open that code in your VS code `Front end/groww_home.html`
 - Open the `groww_home.html` on Live server
 - Initialise the server `node server.js` on terminal
