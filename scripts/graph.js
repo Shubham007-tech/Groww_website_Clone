@@ -11,7 +11,7 @@ async function getData(){
     let productSymbol = productArr[0].symbol;
     console.log(productSymbol);
     let dt = await fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${productSymbol}&apikey=0PTMBKNK94C4NSG5`)
-    let data =  await dt.json();
+    let data =  await dt.json();                                                                //   
     console.log(data["Time Series (Daily)"]);
     appendingData(data["Time Series (Daily)"]);
 }

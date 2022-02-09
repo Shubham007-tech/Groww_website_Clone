@@ -1,7 +1,7 @@
 let prodContainer = document.getElementById("container");
 let data ;
     //To GET data from server
-    fetch("http://localhost:3000/api/products")
+    fetch("https://shubham007-tech.github.io/GrowwDatabase/db.json")
     .then((res) => {
         return res.json();
     })

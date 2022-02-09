@@ -33,7 +33,7 @@ function showProduct(data){
         
         btnFund.innerHTML = `Explore Funds`
         btnFund.onclick = () => {
-         window.location.href = `http://127.0.0.1:5502/Front%20end/groww_products.html`;
+         window.location.href = `http://127.0.0.1:5502/Front%20end/groww_products.html`;   //
         }
 
         container.append(h1,img,btnFund);
