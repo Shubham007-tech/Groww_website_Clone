@@ -281,6 +281,7 @@ display:none;
 }
 
 .head{
+   margin-left: 15px;
    color:#44475b;
    letter-spacing: .01em;
    width:90%;
