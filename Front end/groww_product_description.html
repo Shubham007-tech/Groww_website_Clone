@@ -8,9 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel = "icon" href = "https://groww.in/logo-groww270.png" type = "image/x-icon"> 
-    <link rel = "stylesheet" href="/styles/navbar.css">
-    <link rel = "stylesheet" href="/styles/product_description.css">
-    <link rel="stylesheet" href="/styles/search_box.css"> 
+    <link rel = "stylesheet" href="./styles/navbar.css">
+    <link rel = "stylesheet" href="./styles/product_description.css">
+    <link rel="stylesheet" href="./styles/search_box.css"> 
 </head>
 <body>
 
@@ -453,8 +453,8 @@
 
 <script type="module">
 
-    import { showDescription, addToCart, goToCart, showMonthlySip, showOneTime, calendar } from "/scripts/product_desc_scripts.js";
-    import { getData, appendingData, graph } from "/scripts/graph.js";
+    import { showDescription, addToCart, goToCart, showMonthlySip, showOneTime, calendar } from "./scripts/product_desc_scripts.js";
+    import { getData, appendingData, graph } from "./scripts/graph.js";
     getData();
 
     let addToCartBtn = document.getElementById("addToCartBtn");
@@ -479,5 +479,5 @@
 
 </script>
 
-<script src="/scripts/search_box.js"></script>
-<script src="/scripts/changeNavbar.js"></script>
+<script src="./scripts/search_box.js"></script>
+<script src="./scripts/changeNavbar.js"></script>
