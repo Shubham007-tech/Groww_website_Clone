@@ -114,7 +114,7 @@ function appendbtn(){
     
     btnFund.innerHTML = `ADD MORE FUNDS`
     btnFund.onclick = () => {
-     window.location.href = `http://127.0.0.1:5502/Front%20end/groww_products.html`;
+     window.location.href = `../Front end/groww_products.html`;
     }
    parent.append(btnFund);
 }
@@ -141,7 +141,7 @@ function payment_page(){
     
     pay.onclick = () => {
 
-        window.location.href = 'http://127.0.0.1:5502/Front%20end/groww_payment.html';
+        window.location.href = '../Front end/groww_payment.html';
     }
     
 }
