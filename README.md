@@ -14,8 +14,7 @@ Have a look at Deployed link - https://shubham007-tech.github.io/Groww_website_C
 
 ## Groww Clone
 
-### Sign up Page
-![](https://github.com/Shubham007-tech/Groww_website_Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Signup.png)
+
 
 ### Home Page
 ![](https://github.com/Shubham007-tech/Groww_website_Clone/blob/main/Groww%20Clone%20Screenshots/Groww%20Home%20Page.png)
