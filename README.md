@@ -62,9 +62,9 @@ To run, follow these steps:
 ## Creators
 
 - [@Taher Ahmed](https://github.com/taherahmed14)
-- [@Akshay Kumar](https://github.com/AkshaykumarG26)
 - [@Pankaj Raj](https://github.com/Ipankaj07)
 - [@Shubham Bharti](https://github.com/Shubham007-tech)
 - [@Avinash](https://github.com/abhi103767)
 - [@Saurabh Verma](https://github.com/akasaurabhverma)
+- [@Akshay Kumar](https://github.com/AkshaykumarG26)
 
